@@ -469,7 +469,7 @@
       starter_bench_stem <-
         starter_bench[1] %>% clean_to_stem()
     } else {
-      starter_bench_range_stem <-
+      starter_bench_stem <-
         ''
     }
 
@@ -539,8 +539,7 @@
         ''
     }
 
-    url <-
-      glue("{base}&DateFrom={date_from_stem}&DateTo={date_to_stem}&GameSegment={game_segment_stem}&LastNGames={last_n_games_stem}&LeagueID=00&Location={location_stem}&MeasureType={measure_type_stem}&LastNGames={last_n_games_stem}&Month={month_stem}&OpponentTeamID={opponent_stem}&Outcome={outcome_stem}&PORound={playoff_round_stem}&PaceAdjust={pace_stem}&PerMode={per_mode_type_stem}&Period={period_stem}&PlusMinus={plus_minus_stem}&Rank={rank_stem}&Season={slugSeason}&SeasonSegment={season_segment_stem}&SeasonType={season_type_stem}&ShotClockRange={shot_clock_range_stem}&{slug_type}={id}&VsConference={conference_against_stem}&VsDivision={division_against_stem}&DraftYear={draft_year_stem}&GameScope={game_scope_stem}&PlayerPosition={player_position_stem}&height={height_stem}&Country={country_stem}&College={college_stem}&DraftPick={draft_pick_stem}&Weight={weight_stem}&StarterBench={starter_bench_range_stem}&PlayerExperience={player_experience_stem}&clutchTime={clutch_stem}&aheadBehind={ahead_behind_stem}&defenseCategory={defense_stem}&pointDiff={point_diff}&closeDefDistRange={closest_defender_range_stem}&touchTimeRange={touch_time_range_stem}&generalRange={general_range_stem}&dribbleRange={dribble_range_stem}&distanceRange={shot_distance_range_stem}") %>%
+    url <- glue("{base}&DateFrom={date_from_stem}&DateTo={date_to_stem}&GameSegment={game_segment_stem}&LastNGames={last_n_games_stem}&LeagueID=00&Location={location_stem}&MeasureType={measure_type_stem}&LastNGames={last_n_games_stem}&Month={month_stem}&OpponentTeamID={opponent_stem}&Outcome={outcome_stem}&PORound={playoff_round_stem}&PaceAdjust={pace_stem}&PerMode={per_mode_type_stem}&Period={period_stem}&PlusMinus={plus_minus_stem}&Rank={rank_stem}&Season={slugSeason}&SeasonSegment={season_segment_stem}&SeasonType={season_type_stem}&ShotClockRange={shot_clock_range_stem}&{slug_type}={id}&VsConference={conference_against_stem}&VsDivision={division_against_stem}&DraftYear={draft_year_stem}&GameScope={game_scope_stem}&PlayerPosition={player_position_stem}&height={height_stem}&Country={country_stem}&College={college_stem}&DraftPick={draft_pick_stem}&Weight={weight_stem}&StarterBench={starter_bench_stem}&PlayerExperience={player_experience_stem}&clutchTime={clutch_stem}&aheadBehind={ahead_behind_stem}&defenseCategory={defense_stem}&pointDiff={point_diff}&closeDefDistRange={closest_defender_range_stem}&touchTimeRange={touch_time_range_stem}&generalRange={general_range_stem}&dribbleRange={dribble_range_stem}&distanceRange={shot_distance_range_stem}") %>%
       as.character()
 
     url
